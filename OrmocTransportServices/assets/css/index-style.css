@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 100px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}
+
+.navbar h1 {
+    font-size: 20px;
+}
+
+.navbar img {
+    transition: 0.5 ease;
+}
+
+.navbar img:hover{
+    width: 100px;
+}
+
+.links {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.links .btn-link {
+    color: #000;
+}
+
+.biker-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: background-color 0.5s ease;
+}
+
+.biker-btn:hover {
+    background-color: black;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.hero-container {
+    background-color: #ADBC9F;
+    border-bottom-right-radius: 300px;
+    position: absolute;
+    top: 0%;
+    bottom: 5%;
+    left: 0%;
+    right: 0%;
+}
+
+.img-container {
+    position: absolute;
+    height: 500px;
+    width: auto;
+    left: 60%;
+    top: 10%;
+
+}
+
+.txt-container {
+    position: absolute;
+    font-size: 50px;
+    width: 50rem;
+    left: 70px;
+    top: 100px;
+}
+
+.txt-container h2 {
+    color: white;
+
+}
+
+.p-container {
+    position: absolute;
+    font-size: 50px;
+    width: 50rem;
+    left: 70px;
+    top: 350px;
+}
+
+.p-container p {
+    color: #fff;
+    font-size: 40px;
+}
+
+.service-container {
+    display: inline-block;
+}
+
+.txt-services {
+    position: absolute;
+    top: 100%;
+    left: 90px;
+}
+
+.txt-services h1 {
+    color: gray;
+    font-size: 50px;
+}
+
+.first-service {
+    display: inline;
+    background-color: #ADBC9F;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 55rem;
+    left: 115px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.first-service img {
+    position: absolute;
+    width: 17rem;
+    right: 1px;
+    left: 1px;
+    transition: 0.5s ease;
+}
+
+.first-service img:hover {
+    width: 19rem;
+}
+
+.second-service {
+    display: inline;
+    background-color: #ADBC9F;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 55rem;
+    left: 50rem;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.second-service img {
+    position: absolute;
+    width: 25rem;
+    left: -5rem;
+    top: -4rem;
+    transition: 0.5s ease;
+}
+
+.second-service img:hover{
+    width: 27rem;
+}
+
+.label-service {
+    position: relative;
+    left: 19rem;
+    width: 10rem;
+}
+
+.label-service:hover {
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 1000;
+    margin: 0;
+    color: #ADBC9F;
+}
+
+h4 {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.label-service p {
+    font-size: 15px;
+}
+
+.label-service p{
+    padding: 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 18px;
+    font-size: 15px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+button:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.improving-container {
+    background-color: #ADBC9F;
+    border-top-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    position: absolute;
+    top: 170%;
+    left: 0%;
+    width: 100%;
+    height: 130%;
+}
+
+.label-improving h1 {
+    margin-top: 5rem;
+    margin-left: 70px;
+    color: white;
+    font-size: 50px;
+}
+
+.label-improving p {
+    margin-left: 70px;
+    width: 60rem;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+@media (max-width: 720px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 10px;
+        top: 0; /* Increased padding for touch targets */
+    }
+
+    .navbar h1 {
+        font-size: 18px; /* Smaller font size for smaller screens */
+    }
+
+    .links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+    }
+
+    .links a {
+        padding: 10px;
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    .biker-btn {
+        padding: 8px 16px;
+    }
+
+    img {
+        width: 40px; /* Smaller images for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    .hero-container,
+    .img-container,
+    .txt-container,
+    .p-container,
+    .txt-services,
+    .improving-container,
+    .first-service,
+    .second-service {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0 20px; /* Add padding to keep content from touching the edges */
+        text-align: center;
+        margin-top: 20px; /* Add space between sections */
+    }
+
+    .txt-container h2,
+    .p-container p,
+    .txt-services h1,
+    .label-improving h1,
+    .label-improving p {
+        font-size: 30px; /* Smaller font size for smaller screens */
+    }
+
+    .first-service,
+    .second-service {
+        width: 90%; /* Allow some padding on the sides */
+        height: auto; /* Height adjusts to content */
+        margin: 20px auto; /* Center services and add space between them */
+    }
+
+    .first-service img,
+    .second-service img {
+        width: 100%; /* Full width of their container */
+        left: 0;
+        top: 0;
+        position: relative; /* Change position to relative */
+        transition: none; /* Remove transition for mobile devices */
+    }
+
+    .label-service {
+        width: auto; /* Adjust width to content */
+        margin: 10px auto; /* Center label services */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    button {
+        padding: 10px; /* Smaller padding for smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    /* Adjust the service labels for smaller screens */
+    .label-service p {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    /* Adjust the improving-container for smaller screens */
+    .improving-container {
+        padding: 20px; /* Add padding to keep content from touching the edges */
+        border-radius: 0; /* Remove border radius on small screens */
+    }
+
+    .hero-container img{
+        margin-top: 30%;
+        width: 50%;
+    }
+}
+
+
+    

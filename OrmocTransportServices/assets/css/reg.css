@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Raleway' , sans-serif;
+    box-sizing: border-box;
+    background-color: #ADBC9F;
+    color: white;
+}
+
+.horizontal-container {
+    background-color: dodgerblue;
+    width: 50%;
+    margin: 0  auto;
+    padding: 20px;
+    border: 1px solid;
+    margin-top: 30px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5)
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+label {
+    font-weight: bold;
+}
+
+#age {
+    color: white;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: gold;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.big-text {
+    display: block;
+    font-size: 30px;
+}
+
+.narrower-input {
+    width: 50%; /* Adjust the width as needed */
+    max-width: 400px; /* You can set a maximum width if required */
+}
+
+
+@media (max-width: 768px) {
+    .horizontal-container {
+        width: 90%;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .btn {
+        width: 100%; /* Make button full width on smaller screens */
+    }
+}
